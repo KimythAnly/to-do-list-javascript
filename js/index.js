@@ -10,6 +10,10 @@ $('span').on('click',function(event){
   });
   event.stopPropagation();
 })
-$("input[type='text']").on("keypress(13)",function(){
-  alert('hey')
+
+var input = document.querySelectorAll("input[type='text'].textContent()");
+$("#btn1").on("click",function(){
+  $('ul').append(input.textContent());
 })
+/* to append , first we have to get the text from the textbox */
+/* how to ? */

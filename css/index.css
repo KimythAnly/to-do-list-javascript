@@ -3,8 +3,12 @@
   width: 300px;
   margin: 0 auto;
   border: 1px solid gray;
+  padding: 16px;
+  background-position: center;
+  background-blend-mode:  darken;
   }
-  .completed{
+  .completed
+  {
     color: gray;
     text-decoration: line-through;
   }
