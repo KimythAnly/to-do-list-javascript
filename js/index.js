@@ -10,6 +10,12 @@ $('ul').on('click','span',function(event){
   });
   event.stopPropagation();
 })
+$('ul').on('mouseover','span',function(){
+  this.style.display;
+}).on('click','span',function(){
+  this.style.display = "none";
+})
+
 $("input[type='text']").on('keypress',function(enter_key){
 
 
@@ -17,9 +23,10 @@ $("input[type='text']").on('keypress',function(enter_key){
   {
     var text = $(this).val(); // extract the text
     $(this).val("");
-    $('ul').append("<li><span>X</span> "+text+"</li>"); // this dont work when added new li's
+    $('ul').append("<li><span><i class='fas fa-trash-alt'></i> </span> "+text+"</li>"); // this dont work when added new li's
   }
 
 })
+
 /* to append , first we have to get the text from the textbox */
 /* how to ? */
